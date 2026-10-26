@@ -1,9 +1,220 @@
 <!DOCTYPE html>
-<html>
-<head><title>Deal Intelligence App</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharatgas Mandatory Inspection</title>
+  <style>
+    :root {
+      --primary-color: #0056b3;
+      --secondary-color: #f37021;
+      --light-bg: #f8f9fa;
+      --dark-text: #212529;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--dark-text);
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      background-color: var(--secondary-color);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    .hero {
+      background-color: var(--light-bg);
+      border-left: 5px solid var(--secondary-color);
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 4px;
+    }
+    .hero h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      color: var(--primary-color);
+      margin-top: 0;
+    }
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .pricing-table th, .pricing-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    .pricing-table th {
+      background-color: var(--light-bg);
+    }
+    .cta-btn {
+      display: inline-block;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .cta-btn:hover {
+      background-color: #d65b10;
+    }
+    .emergency-box {
+      background-color: #fff3cd;
+      border: 1px solid #ffeeba;
+      color: #856404;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 40px;
+    }
+  </style>
+</head>
 <body>
-    <h1>Mandatory Inspection App</h1>
-    <p>A mobile application designed to connect authorized learners to authorized workspace resources.</p>
-    <p><a href="privacy.html">Privacy Policy</a></p>
+
+  <header>
+    <h1>Bharatgas Mandatory Inspection</h1>
+    <p>Ensuring Safety & Reliability for Every Domestic LPG Connection</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Inspection</a>
+    <a href="#checks">Safety Checklist</a>
+    <a href="#charges">Inspection Charges</a>
+    <a href="#contact">Emergency Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h2>Mandatory Safety Inspection (Every 5 Years)</h2>
+      <p>
+        As per the Ministry of Petroleum & Natural Gas guidelines, a mandatory safety check of your domestic LPG installation must be conducted by an authorized mechanic once every 5 years. Regular inspection prevents gas leaks, detects worn-out equipment, and ensures the safety of your family and home.
+      </p>
+      <a href="#book" class="cta-btn">Book Inspection / Login</a>
+    </div>
+
+    <!-- Emergency Box -->
+    <div class="emergency-box" id="contact">
+      <strong>🚨 Emergency Toll-Free Gas Leakage Helpline:</strong> Call <strong>1906</strong> immediately if you detect an LPG leak.
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="section-grid">
+
+      <!-- Checklist Card -->
+      <div class="card" id="checks">
+        <h3>What Gets Inspected?</h3>
+        <ul>
+          <li><strong>Suraksha LPG Hose:</strong> Checking for cracks, wear, or expiry.</li>
+          <li><strong>Pressure Regulator:</strong> Testing regulator locking mechanism and O-ring seal.</li>
+          <li><strong>LPG Gas Stove & Burners:</strong> Checking flame quality and burner efficiency.</li>
+          <li><strong>Leakage Testing:</strong> Soap solution leak test across joints and cylinder pad.</li>
+          <li><strong>Installation Positioning:</strong> Verification of proper cylinder positioning and ventilation.</li>
+        </ul>
+      </div>
+
+      <!-- Pricing & Charges Card -->
+      <div class="card" id="charges">
+        <h3>Applicable Inspection Charges</h3>
+        <p>Standard mandatory inspection charges as per Bharatgas guidelines:</p>
+        <table class="pricing-table">
+          <tr>
+            <th>Service Item</th>
+            <th>Amount (INR)</th>
+          </tr>
+          <tr>
+            <td>Mandatory Inspection Fee</td>
+            <td>₹200.00</td>
+          </tr>
+          <tr>
+            <td>Suraksha Hose Tube Rate (If replaced)</td>
+            <td>₹190.00</td>
+          </tr>
+          <tr>
+            <td>GST (18%)</td>
+            <td>₹36.00</td>
+          </tr>
+          <tr>
+            <th>Total (with 5-Year Warranty)</th>
+            <th>₹426.00</th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Key Safety Guidelines -->
+    <div class="card" id="about">
+      <h3>Essential LPG Safety Rules</h3>
+      <ol>
+        <li>Always insist on a Pre-Delivery Inspection (PDI) when receiving a cylinder refill.</li>
+        <li>Only allow authorized Bharatgas mechanics carrying valid ID cards to inspect your installation.</li>
+        <li>Always use a certified <strong>Suraksha Hose</strong> and replace it every 5 years.</li>
+        <li>Switch off the pressure regulator knob when the stove is not in use.</li>
+        <li>If you smell gas: Turn off the regulator, open windows, and do <strong>NOT</strong> operate electrical switches.</li>
+      </ol>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Bharatgas Mandatory Inspection Portal. All rights reserved.</p>
+    <p>Emergency Leakage Contact: 1906 | Smartline: 1800-224-344[cite: 6.2]</p>
+  </footer>
+
 </body>
 </html>
